@@ -30,4 +30,10 @@ public class JeuDeCartes {
 		return cartes;
 		
 	}
+	
+	public boolean checkCount() {
+		Carte[] cartes = donnerCartes();
+		int totalCartes= cartes.length;
+		return nbCartes == totalCartes;
+	}
 }
